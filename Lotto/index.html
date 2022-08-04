@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로또 추첨기</title>
+</head>
+<body>
+    <header>
+        <h2 class="title">로또 추첨기</h2>
+    </header>
+    <div class="content">
+         <div class="rottoNum_wrap"> <!--로또공(?)이 들어갈 영역 -->
+            <div class="ball" id="num1"><span>?</span></div>
+            <!--동일하게 동그란 모양을 만들기 위해 class로 ball 주기-->
+            <div class="ball" id="num2"><span>?</span></div>
+            <div class="ball" id="num3"><span>?</span></div>
+            <div class="ball" id="num4"><span>?</span></div>
+            <div class="ball" id="num5"><span>?</span></div>
+            <div class="ball" id="num6"><span>?</span></div>
+            <div class="plus">+</div>
+            <div class="ball bonus" id="num7"><span>?</span></div>
+            <!-- 보너스번호는 공의 색깔을 다르게 주기위해 bonus로 클래스명 주기 -->
+            <div class="btn_wrap"> <!--버튼영역-->
+            <input class ="btn" type="button" value="추첨하기" onclick="getNum()">
+            <!-- // 클릭된다면 getNum() 함수가 실행되게 하기 -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
