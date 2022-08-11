@@ -1,24 +1,36 @@
-var counter = 0;
-var randomNumber = ; //컴퓨터 1~100 무작위 수 생성
+var ran;
 
-document.getElementById("try") //키보드 클릭해 함수 실행
-
-if() //함수 실행 //kdypress 때 브라우저 기본 동작 : 취소
-
-function finding(){
-    var userNumber = document.getElementById("try").ariaValueMax;
-    if(){
-        if(randomNumber > userNumber){
-            document.getElementById("display").innerText = "UP!";
+function guess() {
+    var num1 = document.getElementById("user").value;
+    if (num1 == "") {
+        alert('숫자를 입력하세요');
+    }
+    else if (num1 == ran) {
+        alert('정답입니다.');
+    }
+    else {
+        if (ran > num1) {
+            alert(num1 + '보다 큽니다.');
         }
-        else if{
-
-        }
-        else{
-
+        else {
+            alert(num2 + '보다 작습니다.');
         }
     }
-    else{
+    document.getElementById("guesses").value;
+}
 
-    }
+function gameReset() {
+    ran = Math.floor(Math.random() * 100 + 1);
+    count = 1;
+    document.getElementById("area").innerHTML = "";
+    document.getElementById("result").value = "";
+    document.getElementById("guesses").value = "";
+    document.getElementById("user").value = "";
+}
+
+window.onload = function () {
+    document.getElementById("resetbtn").addEventListener('click', function () {
+        gameReset();
+    });
+    gameReset();
 }

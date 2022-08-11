@@ -1,5 +1,13 @@
-// 1. 시작시 default  아이디를 사용하는 요소가 선택된 것으로 처리 -> 선택된 요소.click();
-// 2. 모든  content  클래스를 사용하는 요소들을 보이지 않도록 처리./
-// 3. 모든  tab   클래스를 사용하는 요소들(탭 버튼)의 배경을 제거. //
-// 4. 선택된(target) 요소만 보이도록 설정.//
-// 5. 선택된 탭의 배경을 변경.//
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }

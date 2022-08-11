@@ -1,38 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-   </head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+<title>Main menu tab</title>
+</head>
 <body>
-    <div id="About" class="content">
-      <h1>About</h1>
-      <p>Custom Software Development Company</p>
-    </div>
 
-    <div id="Products" class="content">
-      <h1>Products</h1>
-      <p>Building tailored software to address critical needs of global enterprises.</p>
-    </div>
+<div id="About" class="tabcontent">
+  <h1>About</h1>
+  <p>Custom Software Development Company</p>
+</div>
 
-    <div id="Technology" class="content">
-      <h1>Technology</h1>
-      <p>Machine Learning, Artificial Intelligent, Cloud Platform.</p>
-    </div>
+<div id="Products" class="tabcontent">
+  <h1>Products</h1>
+  <p>Building tailored software to address critical needs of global enterprises.</p> 
+</div>
 
-    <div id="Downloads" class="content">
-      <h1>Downloads</h1>
-      <p>You can download a free 10 days trial.</p>
-    </div>
+<div id="Technology" class="tabcontent">
+  <h1>Technology</h1>
+  <p>Machine Learning, Artificial Intelligent, Cloud Platform.</p>
+</div>
 
-    <button id="default" class="tab" onclick="openMenu('About', this, 'tomato')">About</button>
-    <button class="tab" onclick="openMenu('Products', this, 'darkolivegreen')">Products</button>
-    <button class="tab" onclick="openMenu([          ,      ,             ])">Technology</button>
-    <button class="tab" onclick="openMenu([          ,      ,             ])">Downloads</button>
-    <div id="test" style ="border: 1px solid #555;"></div>
-  </body>
+<div id="Downloads" class="tabcontent">
+  <h1>Downloads</h1>
+  <p>You can download a free 10 days trial.</p>
+</div>
+<div class="tab">
+  <div class="tab1">
+    <button class="tablinks" onclick="openCity(event, 'About')"><span class="c1">About</span></button>
+  </div>
+  <div class="tab2">
+    <button class="tablinks" onclick="openCity(event, 'Products')"><span class="c1">Products</span></button>
+  </div>
+  <div class="tab3">
+    <button class="tablinks" onclick="openCity(event, 'Technology')"><span class="c1">Technology</span></button>
+  </div>
+  <div class="tab4">
+    <button class="tablinks" onclick="openCity(event, 'Downloads')"><span class="c1">Downloads</span></button>
+  </div>
+</div>
 
-</html>
+</body>
+</html> 

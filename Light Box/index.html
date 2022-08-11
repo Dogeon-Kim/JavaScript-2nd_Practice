@@ -1,29 +1,61 @@
-<!doctype html>
-<html lang="ko">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>라이트박스</title>
-    <link rel="stylesheet" href="css/lightbox.css">
-  </head>
-  <body>
-    <div class="row">
-      <ul>
-        <li><img src="images/tree-1-thumb.jpg" data-src="images/tree-1.jpg" class="pic"></li>
-        <li><img src="images/tree-2-thumb.jpg" data-src="images/tree-2.jpg" class="pic"></li>
-        <li><img src="images/tree-3-thumb.jpg" data-src="images/tree-3.jpg" class="pic"></li> 
-        <li><img src="images/tree-4-thumb.jpg" data-src="images/tree-4.jpg" class="pic"></li>
-        <li><img src="images/tree-5-thumb.jpg" data-src="images/tree-5.jpg" class="pic"></li>
-        <li><img src="images/tree-6-thumb.jpg" data-src="images/tree-6.jpg" class="pic"></li>          
-      </ul>    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Lightbox | CodingNepal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <div class="btn_open">
+      <a href="#pop_info_1"><img src="images/tree-1-thumb.jpg"></a>
+    </div>
+    <a href="#pop_info_2" class="btn_open">팝업 열기2</a>
+    <a href="#pop_info_3" class="btn_open">팝업 열기3</a>
+    <a href="#pop_info_4" class="btn_open">팝업 열기4</a>
+    <a href="#pop_info_5" class="btn_open">팝업 열기5</a>
+    <a href="#pop_info_6" class="btn_open">팝업 열기6</a>
+  
+    <div id="pop_info_1" class="pop_wrap" style="display:none;">
+      <div class="pop_inner">
+        <p class="dsc">팝업 안내문구 입니다.</p>
+      </div>
+    </div>
+  
+    <div id="pop_info_2" class="pop_wrap" style="display:none;">
+      <div class="pop_inner">
+        <p class="dsc">팝업 안내문구 입니다222.</p>
+      </div>
     </div>
 
-    <div id="lightbox">
-			<img src="images/tree-1.jpg" alt="" id="lightboxImage">			
+    <div id="pop_info_3" class="pop_wrap" style="display:none;">
+      <div class="pop_inner">
+        <p class="dsc">팝업 안내문구 입니다333.</p>
+      </div>
     </div>
 
-    <script>
-        
-    </script>
-  </body>
+    <div id="pop_info_4" class="pop_wrap" style="display:none;">
+      <div class="pop_inner">
+        <p class="dsc">팝업 안내문구 입니다444.</p>
+      </div>
+    </div>
+
+    <div id="pop_info_5" class="pop_wrap" style="display:none;">
+      <div class="pop_inner">
+        <p class="dsc">팝업 안내문구 입니다555.</p>
+      </div>
+    </div>
+
+    <div id="pop_info_6" class="pop_wrap" style="display:none;">
+      <div class="pop_inner">
+        <p class="dsc">팝업 안내문구 입니다666.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
 </html>
