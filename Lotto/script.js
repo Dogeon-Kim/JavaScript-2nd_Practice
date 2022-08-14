@@ -33,21 +33,6 @@ function runLottoSys(){
 
   for(let i=0; i<index; i++){
     setTimeout(function(){
-      /*if(0<lottoArr[i] && lottoArr[i] < 11){
-        lotto_num_sub_id.innerHTML += "<div class='lotto_num_part' style='background-color:#f1bbba;'>" + lottoArr[i] + "</div>"
-      } 
-      else if(10<lottoArr[i] && lottoArr[i] < 21) {
-        lotto_num_sub_id.innerHTML += "<div class='lotto_num_part' style='background-color:#f1bbba;'>" + lottoArr[i] + "</div>"
-      } 
-      else if(20<lottoArr[i] && lottoArr[i] < 31) {
-        lotto_num_sub_id.innerHTML += "<div class='lotto_num_part' style='background-color:#f1bbba;'>" + lottoArr[i] + "</div>"
-      } 
-      else if(30<lottoArr[i] && lottoArr[i] < 41) {
-        lotto_num_sub_id.innerHTML += "<div class='lotto_num_part' style='background-color:#f1bbba;'>" + lottoArr[i] + "</div>"
-      } 
-      else if(40<lottoArr[i] && lottoArr[i] < 46) {
-        lotto_num_sub_id.innerHTML += "<div class='lotto_num_part' style='background-color:#aed8ff;'>" + lottoArr[i] + "</div>"
-      }*/
       if(i == 6){
         lotto_num_sub_id.innerHTML += "<div class='lotto_num_plus'><span style='top:22.5px;'> + </span></div>"
       }

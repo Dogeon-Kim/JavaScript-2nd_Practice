@@ -12,9 +12,9 @@ span {
     border: 1px solid #ccc;
     background-color: #555;
     font-size: 17px;
-  }
+}
   
-  .tab button {
+.tab button {
     background-color: inherit;
     float: left;
     border: none;
@@ -24,34 +24,34 @@ span {
     width: 25%;
     transition: 0.3s;
     font-size: 17px;
-  }
+}
   
-  .tab button:hover {
+.tab button:hover {
     background-color: #777;
-  }
+}
   
-  .tab1 button.active {
-    background-color: tomato;
-  }
-  .tab2 button.active {
-    background-color: darkolivegreen;
-  }
-  .tab3 button.active {
-    background-color: dodgerblue;
-  }
-  .tab4 button.active {
-    background-color: orange;
-  }
+.tab1 button.active {
+  background-color: tomato;
+}
+.tab2 button.active {
+  background-color: darkolivegreen;
+}
+.tab3 button.active {
+  background-color: dodgerblue;
+}
+.tab4 button.active {
+  background-color: orange;
+}
 
-  .tabcontent {
-    display: none;
-    padding: 50px;
-    border: 1px solid #777;
-    border-top: none;
-    text-align: center;
-  }
+.tabcontent {
+  display: none;
+  padding: 50px;
+  border: 1px solid #777;
+  border-top: none;
+  text-align: center;
+}
 
-  #About { background-color: tomato; display:block; }
-  #Products { background-color: darkolivegreen; }
-  #Technology { background-color: dodgerblue; }
-  #Downloads { background-color: orange; }  
+#About { background-color: tomato; display:block; }
+#Products { background-color: darkolivegreen; }
+#Technology { background-color: dodgerblue; }
+#Downloads { background-color: orange; }  
